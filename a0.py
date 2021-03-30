@@ -28,7 +28,14 @@ dataset = read_csv(url, names=names)
 # print(dataset)
 
 
-# 3.1 Dimenstions of the dataset
-print(dataset.shape)
+# # 3.1 Dimenstions of the dataset
+# print(dataset.shape)
 
-# 3.2 Peeking at the data
+# # 3.2 Peeking at the data
+# print(dataset.head(20))
+
+# # 3.3 Statistical Summary
+# print(dataset.describe())
+
+# # 3.4 Class Distribution
+# print(dataset.groupby('class').size())
