@@ -39,3 +39,6 @@ dataset = read_csv(url, names=names)
 
 # # 3.4 Class Distribution
 # print(dataset.groupby('class').size())
+
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
